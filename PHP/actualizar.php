@@ -32,7 +32,7 @@ if (isset($_POST['update'])) {
   $tipo_usuario = $_POST['tipo_user'];
 
   $query = "UPDATE usuarios set user ='$usuario', pass = '$contrasenia', name = '$nombre', 
-  correo='$correo', tipo_usuario = '$tipo_usuario' WHERE id=$id";
+  email='$correo', tipo_user = '$tipo_usuario' WHERE id=$id";
 
 
 $ejecutar = mysqli_query($conexion, $query);
